@@ -1,0 +1,222 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Date;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+class CarSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        DB::table('cars')->insert(
+            [
+                [
+                    'make' => 'Mazda',
+                    'model' => 'MX5',
+                    'year' => 2001,
+                    'engine' => '3.6 V6',
+                    'transmission' => 'Manual 6spd',
+                    'price' => 399,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'Mazda',
+                    'model' => 'Miata',
+                    'year' => 2019,
+                    'engine' => '2.0 SkyActive',
+                    'transmission' => 'Manual 6spd',
+                    'price' => 349,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'Dodge',
+                    'model' => 'Viper ACR',
+                    'year' => 2017,
+                    'engine' => '8.4 V10',
+                    'transmission' => 'Manual 6spd',
+                    'price' => 699,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'BMW',
+                    'model' => 'M5 CS',
+                    'year' => 2021,
+                    'engine' => '4.4i',
+                    'transmission' => 'Automatic 8spd',
+                    'price' => 599,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'Mazda',
+                    'model' => 'MX5',
+                    'year' => 2001,
+                    'engine' => '3.6 V6',
+                    'transmission' => 'Manual 6spd',
+                    'price' => 399,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'Mazda',
+                    'model' => 'Miata',
+                    'year' => 2019,
+                    'engine' => '2.0 SkyActive',
+                    'transmission' => 'Manual 6spd',
+                    'price' => 349,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'Dodge',
+                    'model' => 'Viper ACR',
+                    'year' => 2017,
+                    'engine' => '8.4 V10',
+                    'transmission' => 'Manual 6spd',
+                    'price' => 699,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'BMW',
+                    'model' => 'M5 CS',
+                    'year' => 2021,
+                    'engine' => '4.4i',
+                    'transmission' => 'Automatic 8spd',
+                    'price' => 599,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'Mazda',
+                    'model' => 'MX5',
+                    'year' => 2001,
+                    'engine' => '3.6 V6',
+                    'transmission' => 'Manual 6spd',
+                    'price' => 399,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'Mazda',
+                    'model' => 'Miata',
+                    'year' => 2019,
+                    'engine' => '2.0 SkyActive',
+                    'transmission' => 'Manual 6spd',
+                    'price' => 349,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'Dodge',
+                    'model' => 'Viper ACR',
+                    'year' => 2017,
+                    'engine' => '8.4 V10',
+                    'transmission' => 'Manual 6spd',
+                    'price' => 699,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'BMW',
+                    'model' => 'M5 CS',
+                    'year' => 2021,
+                    'engine' => '4.4i',
+                    'transmission' => 'Automatic 8spd',
+                    'price' => 599,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'Mazda',
+                    'model' => 'MX5',
+                    'year' => 2001,
+                    'engine' => '3.6 V6',
+                    'transmission' => 'Manual 6spd',
+                    'price' => 399,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'Mazda',
+                    'model' => 'Miata',
+                    'year' => 2019,
+                    'engine' => '2.0 SkyActive',
+                    'transmission' => 'Manual 6spd',
+                    'price' => 349,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'Dodge',
+                    'model' => 'Viper ACR',
+                    'year' => 2017,
+                    'engine' => '8.4 V10',
+                    'transmission' => 'Manual 6spd',
+                    'price' => 699,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'BMW',
+                    'model' => 'M5 CS',
+                    'year' => 2021,
+                    'engine' => '4.4i',
+                    'transmission' => 'Automatic 8spd',
+                    'price' => 599,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'Mazda',
+                    'model' => 'MX5',
+                    'year' => 2001,
+                    'engine' => '3.6 V6',
+                    'transmission' => 'Manual 6spd',
+                    'price' => 399,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'Mazda',
+                    'model' => 'Miata',
+                    'year' => 2019,
+                    'engine' => '2.0 SkyActive',
+                    'transmission' => 'Manual 6spd',
+                    'price' => 349,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'Dodge',
+                    'model' => 'Viper ACR',
+                    'year' => 2017,
+                    'engine' => '8.4 V10',
+                    'transmission' => 'Manual 6spd',
+                    'price' => 699,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ],
+                [
+                    'make' => 'BMW',
+                    'model' => 'M5 CS',
+                    'year' => 2021,
+                    'engine' => '4.4i',
+                    'transmission' => 'Automatic 8spd',
+                    'price' => 599,
+                    'created_at' => Date::now(),
+                    'updated_at' => Date::now(),
+                ]
+            ]
+        );
+    }
+}
