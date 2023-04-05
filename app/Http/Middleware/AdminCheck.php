@@ -15,12 +15,9 @@ class AdminCheck
      */
     public function handle(Request $request, Closure $next): Response
     {
-        // dd('admincheck', auth()->user()->is_admin);
-
         if (!auth()->check() || !auth()->user()->is_admin)
         {
             // abort(code: 403);
-            // view('welcome');
             return redirect('/');
         }
         return $next($request);
