@@ -21,7 +21,8 @@
                 <label for="email">Email</label>
                 <input type="text" class="form-control" name="email" value="{{ ($user->email ?? '') }}" id="email" placeholder="Email">
             </div>
-
+            
+            <label for="is_admin">Admin rights</label>
             <div class="form-group">
                 <input type="hidden" name="is_admin" value="0">
                 <input type="checkbox" name="is_admin" value="1" data-bootstrap-switch="" {{ ($user->is_admin ? 'checked' : '') }}>

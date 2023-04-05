@@ -14,7 +14,7 @@ class FrontBookingController extends Controller
     {
         if (!auth()->check() || auth()->user()->is_admin)
         {
-            abort(code: 403);
+            return redirect('/');
         }
 
         $bookings = Booking::where('user_id', "=", Auth::user()->id)->get()->sortByDesc('updated_at');
@@ -25,7 +25,7 @@ class FrontBookingController extends Controller
     {
         if (!auth()->check() || auth()->user()->is_admin)
         {
-            abort(code: 403);
+            return redirect('/');
         }
 
         Booking::create([

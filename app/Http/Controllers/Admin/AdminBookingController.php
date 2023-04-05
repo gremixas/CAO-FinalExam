@@ -17,7 +17,6 @@ class AdminBookingController extends Controller
     public function index()
     {
         $bookings = Booking::with('car')->with('user')->get()->sortByDesc('updated_at');
-        // dd($bookings);
         return view('admin.bookings.index', compact('bookings'));
     }
 

@@ -23,13 +23,13 @@ use App\Http\Controllers\Front\FrontBookingController;
 require __DIR__.'/auth.php';
 
 Route::get('/', function () {
-    return redirect('/front');
+    return view('welcome');
 });
 
 Route::get('/front', [FrontHomeController::class, 'index'])->name('home');
 Route::get('/front/{car}', [FrontHomeController::class, 'show'])->name('front.cars.show');
 Route::get('/bookings', [FrontBookingController::class, 'index'])->middleware(['auth'])->name('front.bookings.home');
-Route::get('/bookings/{booking}', [FrontBookingController::class, 'book'])->middleware(['auth'])->name('front.bookings.book');
+Route::get('/bookings/book/{booking}', [FrontBookingController::class, 'book'])->middleware(['auth'])->name('front.bookings.book');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
